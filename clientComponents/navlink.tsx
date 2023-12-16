@@ -23,7 +23,7 @@ const NAVLINK = ({
         onMouseLeave={(e) => setLineLength(!lineLength)}
         className="cursor-pointer "
       >
-        <Link href={`${href}`}>
+        <Link href={`/${href}`}>
           <div className="flex relative" style={{ color: linkColor }}>
             <div>
               <div>
