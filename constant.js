@@ -36,19 +36,19 @@ const navLinks = [
         text: "Home",
     },
     {
-        href: "#about",
+        href: "/#about",
         text: "About",
     },
     {
-        href: "#services",
+        href: "/#services",
         text: "Services",
     },
     {
-        href: "#projects",
+        href: "/#projects",
         text: "Projects",
     },
     {
-        href: "#contact",
+        href: "/#contact",
         text: "Contact",
     },
 ]
@@ -177,23 +177,23 @@ const projectList = [
 const contactDetails = [
     {
         contactIcon: github_logo,
-        contactLink: "/"
+        contactLink: "https://github.com/Prashant-S29"
     },
     {
         contactIcon: linkedin_logo,
-        contactLink: "/"
+        contactLink: "https://www.linkedin.com/in/prashant-singh-529391250/"
     },
     {
         contactIcon: whatsapp_logo,
-        contactLink: "/"
+        contactLink: "https://wa.me/919079215052"
     },
     {
         contactIcon: mail_logo,
-        contactLink: "/"
+        contactLink: "mailto:prashant@gmail.com"
     },
     {
         contactIcon: insta_logo,
-        contactLink: "/"
+        contactLink: "https://www.instagram.com/prashant.o29o/"
     },
 
 ]
