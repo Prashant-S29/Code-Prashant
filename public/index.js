@@ -14,7 +14,7 @@ import serviceSeven from "./logo/serviceSeven.png"
 import serviceEight from "./logo/serviceEight.png"
 import serviceNine from "./logo/serviceNine.png"
 import serviceTen from "./logo/serviceTen.png"
-import btnOne from "./logo/btnOne.png"
+import btnOne from "./logo/btnone.png"
 import btnTwo from "./logo/btnTwo.png"
 
 import react from "./logo/react.png"
