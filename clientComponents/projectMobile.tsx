@@ -64,7 +64,7 @@ const PROJECTS_MOBILE = () => {
                 </div>
               ))}
             </div>
-            <div className="flex justify-center mb-[10px]">
+            <div className="flex justify-center my-[10px]">
               <div className="flex  justify-center items-center gap-2 p-1 rounded-full bg-white ">
                 {projectDetail.projectTags.includes("web dev") && (
                   <Link href={projectDetail.projectGithubLink} target="_blank">
