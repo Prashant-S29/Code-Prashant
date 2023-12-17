@@ -7,6 +7,7 @@ import { logo, dropDown } from "@/public";
 import { navLinks } from "@/constant";
 
 import NAVLINK from "@/clientComponents/navlink";
+import Link from "next/link";
 
 const NAVBAR = () => {
   const [active, setActive] = useState(false);
@@ -16,17 +17,25 @@ const NAVBAR = () => {
       <nav className="w-full z-50 h-[60px] sticky top-0 bg-white flex  justify-between md:justify-normal items-center  px-[20px] py-[8px] border-b">
         <div className="flex justify-center items-center gap-2">
           <div>
-            <Image src={logo} alt="logo" className="w-[35px] sm:w-[40px] aspect-square" />
+            <Image
+              src={logo}
+              alt="logo"
+              className="w-[35px] sm:w-[40px] aspect-square"
+            />
           </div>
           <div className="leading-none">
-            <span className="text-[16px] sm:text-[18px] font-bold">Code-Prashant</span>
+            <span className="text-[16px] sm:text-[18px] font-bold">
+              Code-Prashant
+            </span>
           </div>
         </div>
         <div className="w-[0.5px] mx-[20px] h-[20px] bg-black hidden md:flex" />
         <div className="justify-center gap-3 items-center hidden md:flex">
           {navLinks.map((linkInfo, index) => (
             <div key={index}>
-              <NAVLINK href={linkInfo.href} text={linkInfo.text} />
+              <Link href={`${linkInfo.href}`}>
+                <NAVLINK href={linkInfo.href} text={linkInfo.text} />
+              </Link>
             </div>
           ))}
         </div>
@@ -53,13 +62,21 @@ const NAVBAR = () => {
         <div className={`w-[150px]   h-[100vh] bg-black fixed z-40 p-[20px]`}>
           <div>
             {navLinks.map((linkInfo, index) => (
-              <div key={index} className="mt-[10px]">
-                <NAVLINK
-                  href={linkInfo.href}
-                  text={linkInfo.text}
-                  linkColor="#ffffff"
-                  lineColor="#ffffff"
-                />
+              <div
+                key={index}
+                className="mt-[10px]"
+                onClick={() => {
+                  setActive(false);
+                }}
+              >
+                <Link href={`${linkInfo.href}`}>
+                  <NAVLINK
+                    href={linkInfo.href}
+                    text={linkInfo.text}
+                    linkColor="#ffffff"
+                    lineColor="#ffffff"
+                  />
+                </Link>
               </div>
             ))}
           </div>

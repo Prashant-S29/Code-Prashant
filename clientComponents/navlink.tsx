@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const NAVLINK = ({
   href,
@@ -15,8 +13,6 @@ const NAVLINK = ({
   linkColor?: string;
   lineColor?: string;
 }) => {
-  const router = useRouter();
-
   const [lineLength, setLineLength] = useState(false);
 
   return (
@@ -27,14 +23,7 @@ const NAVLINK = ({
         className="cursor-pointer "
       >
         {/* <Link href={`/${href}`}> */}
-        <div
-          className="flex relative"
-          style={{ color: linkColor }}
-          onClick={() => {
-            router.push(`/`);
-            router.push(`/${href}`);
-          }}
-        >
+        <div className="flex relative" style={{ color: linkColor }}>
           <div>
             <div>
               <span className="font-medium text-[13px] sm:text-[14px] leading-tight md:leading-normal ">
