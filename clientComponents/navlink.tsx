@@ -31,6 +31,7 @@ const NAVLINK = ({
           className="flex relative"
           style={{ color: linkColor }}
           onClick={() => {
+            router.push(`/`);
             router.push(`/${href}`);
           }}
         >
