@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const NAVLINK = ({
   href,
@@ -14,6 +15,8 @@ const NAVLINK = ({
   linkColor?: string;
   lineColor?: string;
 }) => {
+  const router = useRouter();
+
   const [lineLength, setLineLength] = useState(false);
 
   return (
@@ -23,25 +26,31 @@ const NAVLINK = ({
         onMouseLeave={(e) => setLineLength(!lineLength)}
         className="cursor-pointer "
       >
-        <Link href={`/${href}`}>
-          <div className="flex relative" style={{ color: linkColor }}>
+        {/* <Link href={`/${href}`}> */}
+        <div
+          className="flex relative"
+          style={{ color: linkColor }}
+          onClick={() => {
+            router.push(`/${href}`);
+          }}
+        >
+          <div>
             <div>
-              <div>
-                <span className="font-medium text-[13px] sm:text-[14px] leading-tight md:leading-normal ">
-                  {text}
-                </span>
-              </div>
-              <div
-                className={`h-[1.5px] absolute rounded-full bg-[${lineColor}] duration-150`}
-                style={
-                  lineLength
-                    ? { width: "100%", backgroundColor: lineColor }
-                    : { width: "0px", backgroundColor: lineColor }
-                }
-              />
+              <span className="font-medium text-[13px] sm:text-[14px] leading-tight md:leading-normal ">
+                {text}
+              </span>
             </div>
+            <div
+              className={`h-[1.5px] absolute rounded-full bg-[${lineColor}] duration-150`}
+              style={
+                lineLength
+                  ? { width: "100%", backgroundColor: lineColor }
+                  : { width: "0px", backgroundColor: lineColor }
+              }
+            />
           </div>
-        </Link>
+        </div>
+        {/* </Link> */}
       </div>
     </>
   );
