@@ -32,23 +32,23 @@ import {
 
 const navLinks = [
     {
-        href: "",
+        href: "/",
         text: "Home",
     },
     {
-        href: "#about",
+        href: "/#about",
         text: "About",
     },
     {
-        href: "#services",
+        href: "/#services",
         text: "Services",
     },
     {
-        href: "#projects",
+        href: "/#projects",
         text: "Projects",
     },
     {
-        href: "#contact",
+        href: "/#contact",
         text: "Contact",
     },
 ]
