@@ -97,7 +97,7 @@ const projectList = [
             "mern",
             "Figma",
         ],
-        projectDesc: "Designed a stunning website for a shoe startup highlighting user appealing features."
+        projectDesc: "Developed an amazing blog webiste to showcase my designs and development.",
     },
     {
         projectTitle: "Kiska Jutta",
