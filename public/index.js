@@ -14,6 +14,7 @@ import serviceSeven from "./logo/serviceSeven.png"
 import serviceEight from "./logo/serviceEight.png"
 import serviceNine from "./logo/serviceNine.png"
 import serviceTen from "./logo/serviceTen.png"
+import serviceEleven from "./logo/serviceEleven.png"
 import btnOne from "./logo/btnone.png"
 import btnTwo from "./logo/btnTwo.png"
 
@@ -62,6 +63,7 @@ export {
     serviceEight,
     serviceNine,
     serviceTen,
+    serviceEleven,  
     btnOne,
     btnTwo,
     next,

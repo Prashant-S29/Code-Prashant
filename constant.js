@@ -27,7 +27,8 @@ import {
     serviceEight,
     serviceNine,
     serviceTen,
-    serviceThree
+    serviceThree,
+    serviceEleven
 } from "@/public";
 
 const navLinks = [
@@ -84,6 +85,19 @@ const projectList = [
             "mongodb"
         ],
         projectDesc: "Developed an amazing website for my college event. Come with its own admin panel appealing design."
+    },
+    {
+        projectTitle: "Code Components",
+        projectImage: serviceEleven,
+        projectGithubLink: "https://github.com/Prashant-S29/code-components.git",
+        projectLink: "https://www.code-components.in",
+        projectTags: [
+            "web dev",
+            "Nextjs",
+            "mern",
+            "Figma",
+        ],
+        projectDesc: "Designed a stunning website for a shoe startup highlighting user appealing features."
     },
     {
         projectTitle: "Kiska Jutta",

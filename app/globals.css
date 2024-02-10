@@ -45,7 +45,7 @@ html {
 }
 
 .name_text {
-  background: -webkit-linear-gradient(360deg, #2b3de2, #e22bc5);
+  background: -webkit-linear-gradient(360deg, #2600fc, #ff00ea);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
