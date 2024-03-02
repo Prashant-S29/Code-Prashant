@@ -8,6 +8,7 @@ import EXPERTIES from "@/components/experties";
 import ABOUTME from "@/components/aboutMe";
 import PROJECTS from "@/clientComponents/projects";
 import PROJECTS_MOBILE from "@/clientComponents/projectMobile";
+import FEATURED_PROJECTS from "@/clientComponents/featuredProjects";
 
 const HOME = () => {
   return (
@@ -20,6 +21,7 @@ const HOME = () => {
           <ROTATE_IMAGE />
           <EXPERTIES />
           <ABOUTME />
+          <FEATURED_PROJECTS/>
           <div className="hidden md:block">
             <PROJECTS />
           </div>

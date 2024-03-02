@@ -4,10 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  github_logo,
-  visit_link,
-} from "@/public";
+import { github_logo, visit_link } from "@/public";
 import { projectList } from "@/constant";
 
 const PROJECTS = () => {
@@ -16,7 +13,7 @@ const PROJECTS = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center" id="projects">
+      <div className="w-full flex justify-center items-center" >
         <div className="text-center w-full">
           <div className="my-[10px]">
             <span className="text-[32px] font-black">Projects</span>
@@ -50,7 +47,16 @@ const PROJECTS = () => {
                           <Image
                             src={projectDetail.projectImage}
                             alt="serviceOne"
-                            className={`rounded-[20px] h-[250px] duration-300 object-cover object-center ${
+                            className={`rounded-[20px] ${
+                              index === 0
+                                ? "rounded-tl-[40px]"
+                                : "rounded-tl-[20px]"
+                            }
+                            ${
+                              index === projectList.length - 1
+                                ? "rounded-tr-[40px]"
+                                : "rounded-tr-[20px]"
+                            } h-[250px] duration-300 object-cover object-center ${
                               showVistOption
                                 ? "opacity-50 blur-[3px]"
                                 : "opacity-100"
@@ -110,12 +116,12 @@ const PROJECTS = () => {
                     </div>
                   )}
                   <div
-                    className={` font-black text-center w-full      whitespace-nowrap  uppercase
+                    className={` font-black text-center w-full whitespace-nowrap  uppercase
                    duration-200 ${
-                    active === index
-                      ? "text-white rotate-0 mb-0 text-[22px] lg:text-[28px]"
-                      : "text-gray-600 text-[18px] lg:text-[22px] -rotate-90  mb-[50px]"
-                  } absolute z-20 bottom-5`}
+                     active === index
+                       ? "text-white rotate-0 mb-0 text-[22px] lg:text-[28px]"
+                       : "text-gray-600 text-[18px] lg:text-[22px] -rotate-90  mb-[50px]"
+                   } absolute z-20 bottom-5`}
                   >
                     <span className="">{projectDetail.projectTitle}</span>
                   </div>

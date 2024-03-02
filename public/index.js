@@ -4,17 +4,18 @@ import figmaOne from "./logo/figmaOne.png"
 import photo from "./logo/photo.png"
 import services from "./logo/services.png"
 import scroll from "./logo/scroll.png"
-import serviceOne from "./logo/serviceOne.png"
-import serviceTwo from "./logo/serviceTwo.jpg"
-import serviceThree from "./logo/serviceThree.png"
-import serviceFour from "./logo/serviceFour.png"
-import serviceFive from "./logo/serviceFive.png"
-import serviceSix from "./logo/serviceSix.png"
-import serviceSeven from "./logo/serviceSeven.png"
-import serviceEight from "./logo/serviceEight.png"
-import serviceNine from "./logo/serviceNine.png"
-import serviceTen from "./logo/serviceTen.png"
-import serviceEleven from "./logo/serviceEleven.png"
+import serviceOne from "./logo/serviceOne.webp"
+import serviceTwo from "./logo/serviceTwo.webp"
+import serviceThree from "./logo/serviceThree.webp"
+import serviceFour from "./logo/serviceFour.webp"
+import serviceFive from "./logo/serviceFive.webp"
+import serviceSix from "./logo/serviceSix.webp"
+import serviceSeven from "./logo/serviceSeven.webp"
+import serviceEight from "./logo/serviceEight.webp"
+import serviceNine from "./logo/serviceNine.webp"
+import serviceTen from "./logo/serviceTen.webp"
+import serviceEleven from "./logo/serviceEleven.webp"
+import serviceTwelve from "./logo/serviceTwelve.webp"
 import btnOne from "./logo/btnone.png"
 import btnTwo from "./logo/btnTwo.png"
 
@@ -64,6 +65,7 @@ export {
     serviceNine,
     serviceTen,
     serviceEleven,  
+    serviceTwelve,
     btnOne,
     btnTwo,
     next,

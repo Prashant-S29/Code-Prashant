@@ -68,7 +68,7 @@ const EXPERTIES = () => {
                 needs.
               </span>
             </div>
-            <div>
+            <div className="mt-4">
               <Image
                 src={serviceOne}
                 alt="serviceOne"
@@ -91,7 +91,7 @@ const EXPERTIES = () => {
                 presence.
               </span>
             </div>
-            <div>
+            <div className="mt-4">
               <Image
                 src={serviceTwo}
                 alt="serviceTwo"
@@ -137,7 +137,7 @@ const EXPERTIES = () => {
                 uniqueness.
               </span>
             </div>
-            <div>
+            <div className="mt-4">
               <Image
                 src={serviceThree}
                 alt="serviceThree"
@@ -173,7 +173,7 @@ const EXPERTIES = () => {
                 Unique posters that makes you to stand out among all odds.
               </span>
             </div>
-            <div>
+            <div className="mt-4">
               <Image
                 src={serviceFour}
                 alt="serviceFour"

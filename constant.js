@@ -28,7 +28,8 @@ import {
     serviceNine,
     serviceTen,
     serviceThree,
-    serviceEleven
+    serviceEleven,
+    serviceTwelve
 } from "@/public";
 
 const navLinks = [
@@ -86,19 +87,7 @@ const projectList = [
         ],
         projectDesc: "Developed an amazing website for my college event. Come with its own admin panel appealing design."
     },
-    {
-        projectTitle: "Code Components",
-        projectImage: serviceEleven,
-        projectGithubLink: "https://github.com/Prashant-S29/code-components.git",
-        projectLink: "https://www.code-components.in",
-        projectTags: [
-            "web dev",
-            "Nextjs",
-            "mern",
-            "Figma",
-        ],
-        projectDesc: "Developed an amazing blog webiste to showcase my designs and development.",
-    },
+
     {
         projectTitle: "Kiska Jutta",
         projectImage: serviceOne,
@@ -188,6 +177,35 @@ const projectList = [
     },
 ]
 
+const featuredProject = [
+    {
+        projectTitle: "Code Components",
+        projectImage: serviceEleven,
+        projectGithubLink: "https://github.com/Prashant-S29/code-components.git",
+        projectLink: "https://www.code-components.in",
+        projectTags: [
+            "web dev",
+            "Nextjs",
+            "mern",
+            "Figma",
+        ],
+        projectDesc: "Developed an amazing blog webiste to showcase my designs and development of experimental components.",
+    },
+    {
+        projectTitle: "ICEPADM SKIT",
+        projectImage: serviceTwelve,
+        projectGithubLink: "https://github.com/Prashant-S29/icepadm_skit.git",
+        projectLink: "https://icepadm-skit.vercel.app/",
+        projectTags: [
+            "web dev",
+            "Nextjs",
+            "mern",
+            "Figma",
+        ],
+        projectDesc: "Developed a webiste for ICEPADM, an enviroment awareness organization of SKIT College, Jaipur",
+    },
+]
+
 const contactDetails = [
     {
         contactIcon: github_logo,
@@ -213,5 +231,5 @@ const contactDetails = [
 ]
 
 export {
-    navLinks, techStack, projectList, contactDetails
+    navLinks, techStack, projectList, contactDetails, featuredProject
 }
